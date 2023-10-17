@@ -173,7 +173,7 @@ resultButton.addEventListener('click', () => { // the result button is waiting t
 })
 function startGame() {
     startButton.classList.add('hide') // once the function "startGame" runs the startButton gains the class "hide" and is no longer visible
-    shuffledQuestions = questions.sort(() => Math.random() - .5) // math.random() gives a number between 1-0 and if you -0.5 you can get a positive or negative number. negative and positive numbers are sorted differently. This makes my questions shuffled
+    shuffledQuestions = questions.sort(() => Math.random() - .5) // math.random() gives a random number between 1-0 and if you -0.5 you can get a positive or negative number. negative and positive numbers are sorted differently. This makes my questions shuffled
     currentQuestionIndex = 0 // makes us start on the first question in the shuffled questions array
     questionContainerElement.classList.remove('hide') // once the function "startGame" runs the "questionContainerElement" removes the "hide" class. Meaning my questions show up
     setNextQuestion()
